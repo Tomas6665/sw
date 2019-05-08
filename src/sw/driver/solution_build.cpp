@@ -76,7 +76,7 @@ cl::alias win_md2("md", cl::desc("Alias for -win-md"), cl::aliasopt(win_md));
 //static cl::opt<bool> hide_output("hide-output");
 static cl::opt<bool> cl_show_output("show-output");
 
-extern bool gVerbose;
+bool gVerbose;
 bool gWithTesting;
 path gIdeFastPath;
 path gIdeCopyToDir;
