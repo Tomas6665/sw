@@ -109,7 +109,7 @@ static ::cl::opt<bool, true> force_server_query1("s", ::cl::desc("Force server c
 static ::cl::alias force_server_query2("server", ::cl::desc("Alias for -s"), ::cl::aliasopt(force_server_query1));
 
 static ::cl::opt<path> working_directory("d", ::cl::desc("Working directory"));
-bool gVerbose;
+extern bool gVerbose;
 static ::cl::opt<bool, true> verbose_opt("verbose", ::cl::desc("Verbose output"), ::cl::location(gVerbose));
 static ::cl::alias verbose_opt2("v", ::cl::desc("Alias for -verbose"), ::cl::aliasopt(verbose_opt));
 static ::cl::opt<bool> trace("trace", ::cl::desc("Trace output"));
