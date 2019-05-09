@@ -155,6 +155,8 @@ public:
     //
     bool hasCircularDependency() const;
 
+    CompilerType getCompilerType() const;
+
     using TargetBase::operator=;
     using TargetBase::operator+=;
 

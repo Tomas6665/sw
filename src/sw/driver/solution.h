@@ -225,6 +225,7 @@ public:
     CommandExecutionPlan getExecutionPlan(const Commands &cmds) const;
 
     PackageDescriptionMap getPackages() const;
+    const OS &getHostOs() const;
 
     // events
     template <class ... Args>

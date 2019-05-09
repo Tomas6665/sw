@@ -92,6 +92,11 @@ TargetBase::~TargetBase()
 {
 }
 
+const SolutionSettings &TargetBase::getSettings() const
+{
+    return getSolution()->Settings;
+}
+
 bool TargetBase::hasSameParent(const TargetBase *t) const
 {
     if (this == t)

@@ -72,6 +72,11 @@ NativeExecutedTarget::~NativeExecutedTarget()
     // in our case it is nlohmann::json member
 }
 
+CompilerType NativeExecutedTarget::getCompilerType() const
+{
+    return getSolution()->Settings.Native.CompilerType;
+}
+
 bool NativeExecutedTarget::init()
 {
     switch (init_pass)

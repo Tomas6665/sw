@@ -1503,4 +1503,9 @@ PackageDescriptionMap Solution::getPackages() const
     return m;
 }
 
+const OS &Solution::getHostOs() const
+{
+    return HostOS;
+}
+
 }

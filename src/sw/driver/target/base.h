@@ -138,6 +138,7 @@ String toString(TargetType T);
 
 struct NativeExecutedTarget;
 struct Solution;
+struct SolutionSettings;
 struct Target;
 struct ProjectTarget;
 struct DirectoryTarget;
@@ -297,6 +298,8 @@ public:
 
     Solution *getSolution();
     const Solution *getSolution() const;
+
+    const SolutionSettings &getSettings() const;
 
     ProgramStorage::ProgramType::element_type *findProgramByExtension(const String &ext) const;
     bool hasExtension(const String &ext) const;
